@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Proveedores</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="side">
+            <div class="brand">
+                <i class="fa fa-cube"></i>
+                <span>AruhizA</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="menu-item">
+                        <a href="index.html">
+                            <i class="fa fa-home"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="ventas.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            Ventas
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="compras.html">
+                            <i class="fa fa-shopping-bag"></i>
+                            Compras
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="productos.html">
+                            <i class="fa fa-cubes"></i>
+                            <span>Productos</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="clientes.html">
+                            <i class="fa fa-users"></i>
+                            Clientes
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="proveedores.html">
+                            <i class="fa fa-building"></i>
+                            Proveedores
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="form_proveedores.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wpforms"></i>
+                            Formulario Proveedores
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-item">
+                    <a href="form_compras.html">
+                        <i class="fa fa-shopping-bag"></i>
+                        Comprar
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="form_ventas.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        Vender
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <span onclick="logout()">
+                    <i class="fa fa-user"></i>
+                    Aruhiza Carlos
+                </span>
+                <div class="btn-menu">
+                    <i class="fa fa-list mobile-lista"></i>
+                    <i class="fa fa-list mobile-cierre"></i>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu-content">
+                            <ul>
+                                <li class="mobile-menu-item">
+                                    <a href="index.html">
+                                        <i class="fa fa-home"></i>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="ventas.html">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Ventas
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="compras.html">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Compras
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="productos.html">
+                                        <i class="fa fa-cubes"></i>
+                                        Productos
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="clientes.html">
+                                        <i class="fa fa-cubes"></i>
+                                        Clientes
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item mobile-menu-active">
+                                    <a href="proveedores.html">
+                                        <i class="fa fa-building"></i>
+                                        Proveedores
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="content">
+            <h3 class="title">Proveedores</h3>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10">
+                    <div class="card border-black">
+                        <div class="card-body">
+                            <h3 class="title">
+                                <center>REGISTRO PROVEEDORES</center>
+                            </h3>
+                            <br>
+                            <div class="row row-sm">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="empresa">Nombre Empresa</label>
+                                        <input type="text" id="empresa" class="form" placeholder="ingrese el nombre...">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="contacto">Contacto</label>
+                                        <input type="text" id="contacto" class="form"
+                                            placeholder="ingrese su contacto...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-sm">
+                                <div class="col ">
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="text" id="telefono" class="form"
+                                            placeholder="ingrese su telefono...">
+                                    </div>
+                                </div>
+                                <div class="col ">
+                                    <div class="form-group">
+                                        <label for="correo">Correo</label>
+                                        <input type="email" id="correo" class="form" placeholder="ingrese si correo...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-sm">
+                                <div class="col ">
+                                    <div class="form-group">
+                                        <label for="direccion">Dirección</label>
+                                        <input type="text" id="direccion" class="form"
+                                            placeholder="ingres la direccion...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="center">
+                                <a href="proveedores.html" class="btn btn-delete">Cancelar</a>
+                                <button onclick="registrarProveedor()" class="btn btn-nuevo">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/proveedores.js"></script>
+    <script>
+        setearDatos();
+    </script>
+
+</body>
+
+</html>

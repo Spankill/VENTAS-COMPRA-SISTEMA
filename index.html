@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="side">
+            <div class="brand">
+                <i class="fa fa-cube"></i>
+                AruhizA
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="menu-item active">
+                        <a href="index.html">
+                            <i class="fa fa-home"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="ventas.html">
+                            <i class="fa fa-shopping-bag"></i>
+                            Ventas
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="compras.html">
+                            <i class="fa fa-cubes"></i>
+                            Compras
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="productos.html">
+                            <i class="fa fa-product-hunt"></i>
+                            Productos
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="clientes.html">
+                            <i class="fa fa-users"></i>
+                            Clientes
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="proveedores.html">
+                            <i class="fa fa-building"></i>
+                            Proveedores
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-item">
+                    <a href="form_compras.html">
+                        <i class="fa fa-shopping-bag"></i>
+                        Comprar
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="form_ventas.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        Vender
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <span onclick="logout()">
+                    <i class="fa fa-user"></i>
+                    Aruhiza Carlos
+                </span>
+                <div class="btn-menu">
+                    <i class="fa fa-list mobile-lista"></i>
+                    <i class="fa fa-list mobile-cierre"></i>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu-content">
+                            <ul>
+                                <li class="mobile-menu-item mobile-menu-active">
+                                    <a href="index.html">
+                                        <i class="fa fa-home"></i>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="ventas.html">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Ventas
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="compras.html">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Compras
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="productos.html">
+                                        <i class="fa fa-cubes"></i>
+                                        Productos
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item">
+                                    <a href="clientes.html">
+                                        <i class="fa fa-cubes"></i>
+                                        Clientes
+                                    </a>
+                                </li>
+                                <li class="mobile-menu-item ">
+                                    <a href="proveedores.html">
+                                        <i class="fa fa-cubes"></i>
+                                        Proveedores
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h3 class="title">DASHBOARD</h3>
+
+                
+            <div class="row row-sm">
+                <div class="col">
+                    <div class="card my-5 bg-indigo">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col flex-column">
+                                    <span class="number" id="totalCompras">152.652,00</span>
+                                    <small>Total Compras del Año</small>
+                                </div>
+                                <div class="col right">
+                                    <i class="fa fa-shopping-bag card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-5 bg-green">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col flex-column">
+                                    <span class="number" id="comprasMes">32.452,00</span>
+                                    <small>Total Compras del Mes</small>
+                                </div>
+                                <div class="col right">
+                                    <i class="fa fa-area-chart card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-5 bg-indigo">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col flex-column">
+                                    <span class="number" id="totalVentas">232.685,00</span>
+                                    <small>Total Ventas del Año</small>
+                                </div>
+                                <div class="col right">
+                                    <i class="fa fa-shopping-bag card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-5 bg-green">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col flex-column">
+                                    <span class="number" id="ventasMes">45.256,00</span>
+                                    <small>Total Ventas del Mes</small>
+                                </div>
+                                <div class="col right">
+                                    <i class="fa fa-bar-chart card-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div  class="row row-sm">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="center">VENTAS DEL AñO</h4>
+                            <br>
+                            <div id="chart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="col">
+                <div class="card">
+                    <div class="car-body">
+                        <h4 class="center">PRODUCTOS MAS VENDIDOS</h4>
+                        <br>
+                        <div class="chart-productos">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="JS/panel.js"></script>
+    <!-- <script src="JS/auth.js"></script> -->
+    <script>
+        // verificar();
+    </script>
+</body>
+</html>
